@@ -2,6 +2,8 @@ package shop;
 
 import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
+import java.util.Vector;
+
 /**
  * Created by bathoryalex on 8/16/2016.
  */
@@ -10,10 +12,9 @@ public class Grocery
     private String name;
     private String address;
     private String owner;
-    private Milk[] milkBar;
-    private int flag;
+    private Vector <Milk> milkBar;
 
-    public Grocery(String name, String address, String owner, Milk[] milkBar)
+    public Grocery(String name, String address, String owner, Vector<Milk> milkBar)
     {
         this.name = name;
         this.address = address;
