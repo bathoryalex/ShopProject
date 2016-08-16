@@ -1,4 +1,4 @@
-package Shop;
+package shop;
 
 import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
