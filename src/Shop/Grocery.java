@@ -2,6 +2,7 @@ package shop;
 
 import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
+import java.util.Hashtable;
 import java.util.Vector;
 
 /**
@@ -12,9 +13,9 @@ public class Grocery
     private String name;
     private String address;
     private String owner;
-    private Vector <Milk> milkBar;
+    private Hashtable<Long,Milk> milkBar;
 
-    public Grocery(String name, String address, String owner, Vector<Milk> milkBar)
+    public Grocery(String name, String address, String owner, Hashtable<Long,Milk> milkBar)
     {
         this.name = name;
         this.address = address;
@@ -49,7 +50,7 @@ public class Grocery
         throw new NotImplementedException();
     }
 
-    public Milk purchasedMilk(Milk m)
+    public Milk purchasedMilk(long barCode)
     {
         throw new NotImplementedException();
     }
