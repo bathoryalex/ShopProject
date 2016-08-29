@@ -7,7 +7,7 @@ import java.util.Calendar;
 /**
  * Created by bathoryalex on 8/16/2016.
  */
-public abstract class Milk
+public abstract class Milk extends Food
 {
     public final int LITRE = 0;
     public final int HALFLITRE = 0;
@@ -22,10 +22,8 @@ public abstract class Milk
 
     public Milk(long barCode, int capacity, String company, Calendar warrant, double dripping)
     {
-        this.barCode = barCode;
+        super(barCode, company, warrant);
         this.capacity = capacity;
-        this.company = company;
-        this.warrant = warrant;
         this.dripping = dripping;
     }
 
@@ -63,11 +61,6 @@ public abstract class Milk
     @Override
     public String toString()
     {
-        return "Milk{" +
-                "capacity=" + capacity +
-                ", company='" + company +
-                ", warrant=" + warrant +
-                ", dripping=" + dripping +
-                '}';
+        return super.toString() + "Dripping:" + dripping;
     }
 }
