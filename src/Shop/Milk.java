@@ -7,7 +7,7 @@ import java.util.Calendar;
 /**
  * Created by bathoryalex on 8/16/2016.
  */
-public class Milk
+public abstract class Milk
 {
     public final int LITRE = 0;
     public final int HALFLITRE = 0;
